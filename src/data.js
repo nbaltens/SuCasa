@@ -1,103 +1,103 @@
 // Dolphine Sunset
 import dolphinSunsetMain from "./images/dolphinSunset-main.jpg";
 import dolphinOne from "./images/dolphinSunset-pool.jpg";
-import dolphinTwo from "./images/dolphinSunset-kitchen.webp";
-import dolphinThree from "./images/dolphinSunset-bathroom.webp";
-import dolphinFour from "./images/dolphinSunset-bedroom.webp";
-import dolphinFive from "./images/dolphinSunset-balcony.webp";
-import dolphinSix from "./images/dolphinSunset-dinning.webp";
+import dolphinTwo from "./images/dolphinSunset-kitchen.png";
+import dolphinThree from "./images/dolphinSunset-bathroom.png";
+import dolphinFour from "./images/dolphinSunset-bedroom.png";
+import dolphinFive from "./images/dolphinSunset-balcony.png";
+import dolphinSix from "./images/dolphinSunset-dinning.png";
 
 // Modern Escape
 import modernEscapeMain from "./images/modernEscape-main.jpg";
-import modernEscape1 from "./images/modernEscape-1.webp";
-import modernEscape2 from "./images/modernEscape-2.webp";
-import modernEscape3 from "./images/modernEscape-3.webp";
-import modernEscape4 from "./images/modernEscape-4.webp";
-import modernEscape5 from "./images/modernEscape-5.webp";
-import modernEscape6 from "./images/modernEscape-6.webp";
+import modernEscape1 from "./images/modernEscape-1.png";
+import modernEscape2 from "./images/modernEscape-2.png";
+import modernEscape3 from "./images/modernEscape-3.png";
+import modernEscape4 from "./images/modernEscape-4.png";
+import modernEscape5 from "./images/modernEscape-5.png";
+import modernEscape6 from "./images/modernEscape-6.png";
 
 //Collessie By The Sea
 import collessieMain from "./images/collessie-main.jpg";
 import collessie1 from "./images/collessie-1.jpg";
-import collessie2 from "./images/collessie-2.webp";
+import collessie2 from "./images/collessie-2.png";
 import collessie3 from "./images/collessie-3.jpg";
-import collessie4 from "./images/collessie-4.webp";
-import collessie5 from "./images/collessie-5.webp";
-import collessie6 from "./images/collessie-6.webp";
+import collessie4 from "./images/collessie-4.png";
+import collessie5 from "./images/collessie-5.png";
+import collessie6 from "./images/collessie-6.png";
 
 //VILLA
 import villaMain from "./images/villa-main.jpg";
-import villa1 from "./images/villa-1.webp";
+import villa1 from "./images/villa-1.png";
 import villa2 from "./images/villa-2.jpg";
-import villa3 from "./images/villa-3.webp";
-import villa4 from "./images/villa-4.webp";
-import villa5 from "./images/villa-5.webp";
-import villa6 from "./images/villa-6.webp";
+import villa3 from "./images/villa-3.png";
+import villa4 from "./images/villa-4.png";
+import villa5 from "./images/villa-5.png";
+import villa6 from "./images/villa-6.png";
 
 //BLUE SKY ESTATE
 
 import skyMain from "./images/sky-main.jpg";
-import sky1 from "./images/sky-1.webp";
+import sky1 from "./images/sky-1.png";
 import sky2 from "./images/sky-2.jpg";
-import sky3 from "./images/sky-3.webp";
-import sky4 from "./images/sky-4.webp";
-import sky5 from "./images/sky-5.webp";
+import sky3 from "./images/sky-3.png";
+import sky4 from "./images/sky-4.png";
+import sky5 from "./images/sky-5.png";
 
 //Mountainside Chalet
 import mountainsideMain from "./images/mountainside-main.jpg";
-import mountainside1 from "./images/mountainside-6.webp";
-import mountainside2 from "./images/mountainside-2.webp";
-import mountainside3 from "./images/mountainside-3.webp";
-import mountainside4 from "./images/mountainside-4.webp";
-import mountainside5 from "./images/mountainside-5.webp";
+import mountainside1 from "./images/mountainside-6.png";
+import mountainside2 from "./images/mountainside-2.png";
+import mountainside3 from "./images/mountainside-3.png";
+import mountainside4 from "./images/mountainside-4.png";
+import mountainside5 from "./images/mountainside-5.png";
 
 //Muirfield
 import muirfieldMain from "./images/muirfield-main.jpg";
-import muirfield1 from "./images/muirfield-1.webp";
-import muirfield2 from "./images/muirfield-2.webp";
-import muirfield3 from "./images/muirfield-3.webp";
-import muirfield4 from "./images/muirfield-4.webp";
-import muirfield5 from "./images/muirfield-5.webp";
+import muirfield1 from "./images/muirfield-1.png";
+import muirfield2 from "./images/muirfield-2.png";
+import muirfield3 from "./images/muirfield-3.png";
+import muirfield4 from "./images/muirfield-4.png";
+import muirfield5 from "./images/muirfield-5.png";
 
 //BeachSuite
 import beachSuiteMain from "./images/beachSuite-main.jpg";
-import beachSuite1 from "./images/beachSuite-1.webp";
-import beachSuite2 from "./images/beachSuite-2.webp";
-import beachSuite3 from "./images/beachSuite-3.webp";
-import beachSuite4 from "./images/beachSuite-4.webp";
-import beachSuite5 from "./images/beachSuite-5.webp";
+import beachSuite1 from "./images/beachSuite-1.png";
+import beachSuite2 from "./images/beachSuite-2.png";
+import beachSuite3 from "./images/beachSuite-3.png";
+import beachSuite4 from "./images/beachSuite-4.png";
+import beachSuite5 from "./images/beachSuite-5.png";
 
 //naHale
 import naHaleMain from "./images/garden-main.jpg";
 import naHale1 from "./images/naHale-1.jpg";
-import naHale2 from "./images/garden-2.webp";
-import naHale3 from "./images/garden-3.webp";
-import naHale4 from "./images/garden-4.webp";
-import naHale5 from "./images/garden-5.webp";
+import naHale2 from "./images/garden-2.png";
+import naHale3 from "./images/garden-3.png";
+import naHale4 from "./images/garden-4.png";
+import naHale5 from "./images/garden-5.png";
 
 //Garden
 import gardenMain from "./images/naHale-main.jpg";
 import garden1 from "./images/garden-1.jpg";
-import garden2 from "./images/naHale-2.webp";
-import garden3 from "./images/naHale-3.webp";
-import garden4 from "./images/naHale-4.webp";
-import garden5 from "./images/naHale-5.webp";
+import garden2 from "./images/naHale-2.png";
+import garden3 from "./images/naHale-3.png";
+import garden4 from "./images/naHale-4.png";
+import garden5 from "./images/naHale-5.png";
 
 // SKICHALET
-import skiChaletMain from "./images/skiChalet-main.webp";
+import skiChaletMain from "./images/skiChalet-main.png";
 import skiChalet1 from "./images/skiChalet-1.jpg";
-import skiChalet2 from "./images/skiChalet-2.webp";
-import skiChalet3 from "./images/skiChalet-3.webp";
-import skiChalet4 from "./images/skiChalet-4.webp";
-import skiChalet5 from "./images/skiChalet-5.webp";
+import skiChalet2 from "./images/skiChalet-2.png";
+import skiChalet3 from "./images/skiChalet-3.png";
+import skiChalet4 from "./images/skiChalet-4.png";
+import skiChalet5 from "./images/skiChalet-5.png";
 
 // DREAM
 import dreamMain from "./images/dream-main.jpg";
-import dream1 from "./images/dream-1.webp";
-import dream2 from "./images/dream-2.webp";
-import dream3 from "./images/dream-3.webp";
-import dream4 from "./images/dream-4.webp";
-import dream5 from "./images/dream-6.webp";
+import dream1 from "./images/dream-1.png";
+import dream2 from "./images/dream-2.png";
+import dream3 from "./images/dream-3.png";
+import dream4 from "./images/dream-4.png";
+import dream5 from "./images/dream-6.png";
 
 export default [
   {

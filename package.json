@@ -1,6 +1,6 @@
 {
   "name": "sucasa",
-  "homepage": "http://www.noahbaltensperger.com/projects/sucasa",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import items from './data';
-const RoomContext = React.createContext();
+const RentalContext = React.createContext();
 
-export default class RoomProvider extends Component {
+export default class RentalProvider extends Component {
     state = {
-        rooms: [],
-        sortedRooms: [],
-        featuredRooms: [],
+        rentals: [],
+        sortedRentals: [],
+        featuredRentals: [],
         loading: true,
         location: 'all',
         capacity: 1,
@@ -19,16 +19,16 @@ export default class RoomProvider extends Component {
     //getData 
 
     componentDidMount() {
-        let rooms = this.formatData(items);
-        let featuredRooms = rooms.filter(room => room.featured === true);
-        let maxPrice = Math.max(...rooms.map(item => item.price))
-        let maxSize = Math.max(...rooms.map(item => item.size))
+        let rentals = this.formatData(items);
+        let featuredRentals = rentals.filter(rental => rental.featured === true);
+        let maxPrice = Math.max(...rentals.map(item => item.price))
+        let maxSize = Math.max(...rentals.map(item => item.size))
 
 
         this.setState( {
-            rooms,
-            featuredRooms,
-            sortedRooms:rooms,
+            rentals,
+            featuredRentals,
+            sortedRentals:rentals,
             loading:false,
             price: maxPrice,
             maxPrice,
@@ -42,15 +42,15 @@ export default class RoomProvider extends Component {
             let id = item.sys.id;
             let images = item.fields.images.map(image => image.url);
 
-            let room = {...item.fields,images,id};
-            return room;
+            let rental = {...item.fields,images,id};
+            return rental;
         });
         return tempItems;
     }
-    getRoom = (slug) => {
-        let tempRooms = [...this.state.rooms];
-        const room = tempRooms.find(room =>room.slug === slug);
-        return room;
+    getRental = (slug) => {
+        let tempRentals = [...this.state.rentals];
+        const rental = tempRentals.find(rental =>rental.slug === slug);
+        return rental;
     };
 
     handleChange = event => {
@@ -59,14 +59,14 @@ export default class RoomProvider extends Component {
         const name = event.target.name;
         this.setState( {
             [name] : value
-        }, this.filterRooms)
+        }, this.filterRentals)
         
     };
 
-    filterRooms = () => {
-        let {rooms, location, capacity, price, pool, pets} = this.state;
+    filterRentals = () => {
+        let {rentals, location, capacity, price, pool, pets} = this.state;
         //all homes
-        let activeHome = [...rooms];
+        let activeHome = [...rentals];
 
         //transform what is needed to be integers
         capacity = parseInt(capacity);
@@ -75,30 +75,30 @@ export default class RoomProvider extends Component {
 
         //filter home by location
         if(location !== "all") {
-            activeHome = activeHome.filter(room => room.location === location);
+            activeHome = activeHome.filter(rental => rental.location === location);
         }
 
         //filter home by capacity
         if(capacity !== 1) {
-            activeHome = activeHome.filter(room => room.capacity >= capacity);
+            activeHome = activeHome.filter(rental => rental.capacity >= capacity);
         }
 
         //filter home by price
-        activeHome = activeHome.filter(room => room.price <= price);
+        activeHome = activeHome.filter(rental => rental.price <= price);
 
         //Filter by pool
         if(pool) {
-            activeHome = activeHome.filter(room => room.pool === true);
+            activeHome = activeHome.filter(rental => rental.pool === true);
         }
 
         //Filter by pets
         if(pets) {
-            activeHome = activeHome.filter(room => room.pets === true);
+            activeHome = activeHome.filter(rental => rental.pets === true);
         }
 
         //Set State
         this.setState( {
-            sortedRooms: activeHome
+            sortedRentals: activeHome
         });
     }
 
@@ -106,28 +106,28 @@ export default class RoomProvider extends Component {
 
     render() {
         return (
-            <RoomContext.Provider value={{...this.state, getRoom: this.getRoom, handleChange: this.handleChange}}>
+            <RentalContext.Provider value={{...this.state, getRental: this.getRental, handleChange: this.handleChange}}>
                 {this.props.children}
-            </RoomContext.Provider>
+            </RentalContext.Provider>
         )
     }
 }
 
-//roomconsumer can be changed
-const RoomConsumer = RoomContext.Consumer;
+//rentalconsumer can be changed
+const RentalConsumer = RentalContext.Consumer;
 
 // DELETE this with cooms container and switch
 
-export function withRoomConsumer(Component) {
+export function withRentalConsumer(Component) {
     return function ConsumerWrapper(props) {
         return (
-        <RoomConsumer>
+        <RentalConsumer>
             {value => <Component {...props} context={value} />}
-        </RoomConsumer>
+        </RentalConsumer>
         );
     };
 }
 
 //emd of delete
 
-export{ RoomProvider, RoomConsumer, RoomContext };
+export{ RentalProvider, RentalConsumer, RentalContext };
